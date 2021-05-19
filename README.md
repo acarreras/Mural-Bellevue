@@ -43,7 +43,7 @@ commit + code + lines
 commit + code + lines + branch
 ![dotze](/captures/mural2021_05_20_00_35_08.png)
 
-## Octicons towers and some friends hidden
+## Octicons with some friends
 ![tretze](/captures/mural2021_05_20_00_55_15.png)
 
 
