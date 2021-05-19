@@ -25,3 +25,25 @@ Playing with alpha color and texturized lines with dots
 ![colorcinc](/colors/mural2021_05_19_17_12_03.png)
 ![colorsis](/colors/mural2021_05_19_17_07_14.png)
 
+## Adding some octicons :-)
+commit
+![cinc](/captures/mural2021_05_20_00_15_53.png)
+branch
+![sis](/captures/mural2021_05_20_00_21_50.png)
+code
+![set](/captures/mural2021_05_20_00_22_24.png)
+commit and lines
+![vuit](/captures/mural2021_05_20_00_29_20.png)
+lines + branches
+![nou](/captures/mural2021_05_20_00_31_52.png)
+code & lines
+![deu](/captures/mural2021_05_20_00_33_00.png)
+commit + code + lines
+![onze](/captures/mural2021_05_20_00_33_48.png)
+commit + code + lines + branch
+![dotze](/captures/mural2021_05_20_00_35_08.png)
+
+## Octicons towers and some friends hidden
+![tretze](/captures/mural2021_05_20_00_55_15.png)
+
+
