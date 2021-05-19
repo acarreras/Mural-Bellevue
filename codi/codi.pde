@@ -1,4 +1,12 @@
-int colors[] = {#474747, #363636, #A8A7A7, #CC527A, #E8175D};
+//int colors[] = {#474747, #363636, #A8A7A7, #CC527A, #E8175D};
+//int colors[] = {#BD5532, #373B44, #73C8A9, #DEE1B6, #E1B866};
+//int colors[] = {#CDB380, #036564, #033649, #031634, #E8DDCB};
+//int colors[] = {#2A2C31, #3E4147, #FFFEDF, #DFBA69, #5A2E2E};
+//int colors[] = {#2B4E72, #4E4D4A, #353432, #94BA65, #2790B0};
+//int colors[] = {#2A363B, #99B898, #FECEA8, #FF847C, #E84A5F};
+//int colors[] = {#E8D5B7, #0E2430, #FC3A51, #F5B349, #E8D5B9};
+int colors[] = {#9F111B, #E33546, #292C37, #CCCCCC, #000000};
+//int colors[] = {#696758, #45484B, #36393B, #EEE6AB, #C5BC8E};
 
 color c1 = colors[0];
 color c2 = colors[1];
@@ -27,6 +35,8 @@ boolean brects = true;
 
 void setup() {
   size(1578,548); // 789.94 x 274.32 cm = 9' x 25'11"
+  desplacaColorsEndavant();
+  desplacaColorsEndavant();
   background(colors[0]);
 }
 
@@ -49,7 +59,7 @@ void draw() {
     //noStroke();
     //line4(0,0, midaw,0, gruix);
     //stroke(lerpColor(colors[numcc],colors[(numcc+1)%5],map(fx,0,fx0,0.,1.)),150);
-    stroke(colors[numcc], 150);
+    stroke(colors[numcc], 220);
     line(0,0, midaw,0);
     popMatrix();
     

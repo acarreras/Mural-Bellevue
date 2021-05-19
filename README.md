@@ -17,4 +17,11 @@ Playing with alpha color and texturized lines with dots
 ![tres](/captures/mural2021_05_19_14_16_06.png)
 ![quatre](/captures/mural2021_05_19_14_13_20.png)
 
+## Color palette explorations
+![colorun](/colors/mural2021_05_19_16_08_35.png)
+![colordos](/colors/mural2021_05_19_17_07_39.png)
+![colortres](/colors/mural2021_05_19_17_10_53.png)
+![colorquatre](/colors/mural2021_05_19_17_10_29.png)
+![colorcinc](/colors/mural2021_05_19_17_12_03.png)
+![colorsis](/colors/mural2021_05_19_17_07_14.png)
 
