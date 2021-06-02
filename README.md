@@ -55,4 +55,8 @@ dark and light mode && playing with densities
 ![divuit](/captures/mural2021_06_02_13_58_15.png)
 ![dinou](/captures/mural2021_06_02_13_58_41.png)
 
+## Color palettes
+![divuit](/captures/mural2021_06_02_15_59_56.png)
+![dinou](/captures/mural2021_06_02_16_04_04.png)
+
 

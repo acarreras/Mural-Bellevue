@@ -1,7 +1,9 @@
 // dark background
-int colors[] = {#353432, #4E4D4A, #dac2aa, #6d205a, #a4478d};
+//int colors[] = {#353432, #471039, #dac2aa, #A5027F, #000000};
+int colors[] = {#353432, #4E4D4A, #dac2aa, #A5027F, #000000};
 // light background
 //int colors[] = {#EEE6AB, #C5BC8E, #696758, #36393B, #471039};
+//int colors[] = {#EEE6AB, #C5BC8E, #6d205a, #36393B, #471039};
 
 // lila: a4478d
 // beige: dac2aa
@@ -30,7 +32,7 @@ float salt = 0.12;
 float num, denom, fx;
 float fx0;
 
-int TOTAL_RECTS = 1200; // 300, 600 i 1200
+int TOTAL_RECTS = 600; // 300, 600 i 1200
 int contrects = 0;
 boolean brects = true;
 
