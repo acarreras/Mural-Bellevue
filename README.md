@@ -46,4 +46,13 @@ commit + code + lines + branch
 ## Octicons with some friends
 ![tretze](/captures/mural2021_05_20_00_55_15.png)
 
+## Only generative texture
+dark and light mode && playing with densities
+![catorze](/captures/mural2021_06_02_13_56_23.png)
+![quinze](/captures/mural2021_06_02_13_56_43.png)
+![setze](/captures/mural2021_06_02_13_57_12.png)
+![disset](/captures/mural2021_06_02_13_57_55.png)
+![divuit](/captures/mural2021_06_02_13_58_15.png)
+![dinou](/captures/mural2021_06_02_13_58_41.png)
+
 
