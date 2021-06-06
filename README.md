@@ -58,4 +58,11 @@ commit + code + lines + branch
 ![divuit](/captures/mural2021_06_02_15_59_56.png)
 ![dinou](/captures/mural2021_06_02_16_04_04.png)
 
+## More explorations of color, density and octicons
+3 outputs of the same density
+![vint](/captures/mural2021_06_06_13_38_30_totalrects_678.png.png)
+![vintiu](/captures/mural2021_06_06_13_38_47_totalrects_678.png.png)
+![vintidos](/captures/mural2021_06_06_13_39_03_totalrects_678.png)
 
+adding octicons with commit octicon rotated
+![vintitres](/captures/mural2021_06_06_15_05_47_totalrects_678_fact013.png)
