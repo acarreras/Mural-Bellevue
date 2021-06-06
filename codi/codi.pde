@@ -1,12 +1,6 @@
 // dark background
-//int colors[] = {#353432, #471039, #dac2aa, #A5027F, #000000};
-int colors[] = {#353432, #4E4D4A, #dac2aa, #A5027F, #000000};
-// light background
-//int colors[] = {#EEE6AB, #C5BC8E, #696758, #36393B, #471039};
-//int colors[] = {#EEE6AB, #C5BC8E, #6d205a, #36393B, #471039};
-
-// lila: a4478d
-// beige: dac2aa
+int colors[] = {#292710, #579de2, #5748e1, #c0bcda, #9b95c7};
+// negre, blau calr, blau, gris, gris blavos
 
 color c1 = colors[0];
 color c2 = colors[1];
@@ -32,13 +26,73 @@ float salt = 0.12;
 float num, denom, fx;
 float fx0;
 
-int TOTAL_RECTS = 600; // 300, 600 i 1200
+int TOTAL_RECTS = 678; // numero magic
 int contrects = 0;
 boolean brects = true;
+
+// octicons
+PImage[] code;
+PImage[] branch;
+PImage[] commit;
+PImage[] merge;
+PImage[] hubot;
+PImage[] zap;
+float propcode;
+float propbranch;
+float propcommit;
+float propmerge;
+float prophubot;
+float propzap;
 
 void setup() {
   size(1578,548); // 789.94 x 274.32 cm = 9' x 25'11"
   background(colors[0]);
+  
+  // octicons load
+  code = new PImage[5];
+  branch = new PImage[5];
+  commit = new PImage[5];
+  merge = new PImage[5];
+  hubot = new PImage[5];
+  zap = new PImage[5];
+  for (int i=0; i<5; i++){
+    String filename = "../octicons/code" + (i+1) + ".png";
+    //println(filename);
+    code[i] = loadImage(filename);
+  }
+  propcode = float(code[0].height)/float(code[0].width);
+  for (int i=0; i<5; i++){
+    String filename = "../octicons/git-branch" + (i+1) + ".png";
+    //println(filename);
+    branch[i] = loadImage(filename);
+  }
+  propbranch = float(branch[0].height)/float(branch[0].width);
+  for (int i=0; i<5; i++){
+    String filename = "../octicons/git-commit" + (i+1) + ".png";
+    //println(filename);
+    commit[i] = loadImage(filename);
+  }
+  propcommit = float(commit[0].height)/float(commit[0].width);
+  for (int i=0; i<5; i++){
+    String filename = "../octicons/git-merge" + (i+1) + ".png";
+    //println(filename);
+    merge[i] = loadImage(filename);
+  }
+  propmerge = float(merge[0].height)/float(merge[0].width);
+  /*
+  for (int i=0; i<5; i++){
+    String filename = "../octicons/hubot" + (i+1) + ".png";
+    //println(filename);
+    hubot[i] = loadImage(filename);
+  }
+  prophubot = float(hubot[0].height)/float(hubot[0].width);
+  for (int i=0; i<5; i++){
+    String filename = "../octicons/zap" + (i+1) + ".png";
+    //println(filename);
+    zap[i] = loadImage(filename);
+  }
+  propzap = float(zap[0].height)/float(zap[0].width);
+  */
 }
 
 void draw() {
@@ -69,14 +123,51 @@ void draw() {
     popMatrix();
   }
   
-  if(contrects % 10 == 0) desplacaColorsEndavant();
+  // octicon
+  if(contrects % 5 == 0){ // menys frequents
+    int dau = int(random(0,4));
+    float fact = 0.23;
+    pushMatrix();
+    if(dau == 0){
+      float h = midaw*propcode;
+      translate(random(0,width-midaw), random(height*fact,height-h));
+      //rotate(radians(angle));
+      image(code[numcc], 0,0, midaw, h);
+    }
+    else if(dau == 1){
+      float h = midaw*0.6*propbranch;
+      translate(random(0,width-midaw), random(height*fact,height-h));
+      //rotate(radians(angle));
+      image(branch[numcc], 0,0, midaw*0.6, h);
+    }
+    else if(dau == 2){
+      float h = midaw*propcommit;
+      translate(random(0,width-midaw), random(height*fact,height-h));
+      rotate(radians(angle));
+      image(commit[numcc], 0,0, midaw, h);
+    }
+    else if(dau == 3){
+      float h = midaw*propmerge;
+      translate(random(0,width-midaw), random(height*fact,height-h));
+      //rotate(radians(angle));
+      image(merge[numcc], 0,0, midaw, h);
+    }
+    popMatrix();
+  }
+  
+  if(contrects % 10 == 0){
+    //desplacaColorsEndavant();
+    numcc++;
+    if(numcc > 4) numcc = 0;
+  }
   
   if(brects){
     nouRect(random(0,width-midaw), random(0,height-midah));
     contrects++;
+    
     if(contrects > TOTAL_RECTS){
       brects = false;
-      println("fet");
+      println("fi");
     }
   }
 }
@@ -138,14 +229,14 @@ void pantallazo(){
   String d = year() + "_" + nf(month(),2) + "_"  + nf(day(),2) + "_";
   d = d + nf(hour(),2) + "_"  + nf(minute(),2) + "_"  + nf(second(),2);
   
-  String filename = "./../captures/mural" + d + ".png";
+  String filename = "./../captures/mural" + d + "_totalrects_" + TOTAL_RECTS + ".png";
   println("  --- pantallazo capturat");
   save(filename);
 }
 void nouRect(float px, float py){
   //println("nouRect");
-  midaw = (int)random(20,30);
-  midah = (int)random(70,140);
+  midaw = (int)random(12,21); // mes petits
+  midah = (int)random(70,110);
   posX = px;
   posY = py;
   
