@@ -1,6 +1,8 @@
 // dark background
-int colors[] = {#292710, #579de2, #5748e1, #c0bcda, #9b95c7};
-// negre, blau calr, blau, gris, gris blavos
+int colors[] = {#171717, #579de2, #5748e1, #c0bcda, #9b95c7};
+//int colors[] = {#292710, #579de2, #5748e1, #c0bcda, #000000};
+//int colors[] = {#303131, #2b90b0, #2b4e74, #c0bcda, #000000};
+// gris fosc, blau clar, blau fosc, gris blavos clar, gris fosc
 
 color c1 = colors[0];
 color c2 = colors[1];
