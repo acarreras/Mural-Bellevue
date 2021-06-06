@@ -59,10 +59,13 @@ commit + code + lines + branch
 ![dinou](/captures/mural2021_06_02_16_04_04.png)
 
 ## More explorations of color, density and octicons
-3 outputs of the same density
+3 outputs of the same density and smaller pareto rects
 ![vint](/captures/mural2021_06_06_13_38_30_totalrects_678.png)
 ![vintiu](/captures/mural2021_06_06_13_38_47_totalrects_678.png)
 ![vintidos](/captures/mural2021_06_06_13_39_03_totalrects_678.png)
 
 adding octicons with commit octicon rotated
 ![vintitres](/captures/mural2021_06_06_15_05_47_totalrects_678_fact013.png)
+
+smaller octicons on the top, bigger on the bottom
+![vintiquatre](/captures/mural2021_06_06_15_33_49_totalrects_678.png)

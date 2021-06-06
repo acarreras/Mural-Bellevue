@@ -127,30 +127,28 @@ void draw() {
   if(contrects % 5 == 0){ // menys frequents
     int dau = int(random(0,4));
     float fact = 0.23;
+    float y = random(height*fact,height);
+    float m = map(y,height*fact,height, 0.8*15,1.3*15);// midaw;
     pushMatrix();
     if(dau == 0){
-      float h = midaw*propcode;
-      translate(random(0,width-midaw), random(height*fact,height-h));
+      translate(random(0,width-m), y);
       //rotate(radians(angle));
-      image(code[numcc], 0,0, midaw, h);
+      image(code[numcc], 0,0, m, m);
     }
     else if(dau == 1){
-      float h = midaw*0.6*propbranch;
-      translate(random(0,width-midaw), random(height*fact,height-h));
+      translate(random(0,width-m), y);
       //rotate(radians(angle));
-      image(branch[numcc], 0,0, midaw*0.6, h);
+      image(branch[numcc], 0,0, m, m);
     }
     else if(dau == 2){
-      float h = midaw*propcommit;
-      translate(random(0,width-midaw), random(height*fact,height-h));
+      translate(random(0,width-m), y);
       rotate(radians(angle));
-      image(commit[numcc], 0,0, midaw, h);
+      image(commit[numcc], 0,0, m, m);
     }
     else if(dau == 3){
-      float h = midaw*propmerge;
-      translate(random(0,width-midaw), random(height*fact,height-h));
+      translate(random(0,width-m), y);
       //rotate(radians(angle));
-      image(merge[numcc], 0,0, midaw, h);
+      image(merge[numcc], 0,0, m, m);
     }
     popMatrix();
   }
