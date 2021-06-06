@@ -127,26 +127,26 @@ void draw() {
   if(contrects % 5 == 0){ // menys frequents
     int dau = int(random(0,4));
     float fact = 0.23;
-    float y = random(height*fact,height);
+    float y = posY + midah + 30; //random(height*fact,height);
     float m = map(y,height*fact,height, 0.8*15,1.3*15);// midaw;
     pushMatrix();
     if(dau == 0){
-      translate(random(0,width-m), y);
+      translate(posX, y);
       //rotate(radians(angle));
       image(code[numcc], 0,0, m, m);
     }
     else if(dau == 1){
-      translate(random(0,width-m), y);
+      translate(posX, y);
       //rotate(radians(angle));
       image(branch[numcc], 0,0, m, m);
     }
     else if(dau == 2){
-      translate(random(0,width-m), y);
+      translate(posX+m*0.5, y+m*0.5);
       rotate(radians(angle));
-      image(commit[numcc], 0,0, m, m);
+      image(commit[numcc], m*0.5,m*0.5, m, m);
     }
     else if(dau == 3){
-      translate(random(0,width-m), y);
+      translate(posX, y);
       //rotate(radians(angle));
       image(merge[numcc], 0,0, m, m);
     }

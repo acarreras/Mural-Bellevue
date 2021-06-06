@@ -69,3 +69,9 @@ adding octicons with commit octicon rotated
 
 smaller octicons on the top, bigger on the bottom
 ![vintiquatre](/captures/mural2021_06_06_15_33_49_totalrects_678.png)
+
+octicons aligned with rects
+at the beginning
+![vinticinc](/captures/mural2021_06_06_17_12_49_totalrects_678.png)
+at the end
+![vintisis](/captures/mural2021_06_06_17_13_41_totalrects_678.png)
