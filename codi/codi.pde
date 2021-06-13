@@ -1,8 +1,6 @@
 // dark background
-int colors[] = {#171717, #579de2, #5748e1, #c0bcda, #9b95c7};
-//int colors[] = {#292710, #579de2, #5748e1, #c0bcda, #000000};
-//int colors[] = {#303131, #2b90b0, #2b4e74, #c0bcda, #000000};
-// gris fosc, blau clar, blau fosc, gris blavos clar, gris fosc
+int colors[] = {#292710, #579de2, #5748e1, #c0bcda, #9b95c7};
+// negre, blau calr, blau, gris, gris blavos
 
 color c1 = colors[0];
 color c2 = colors[1];
@@ -32,6 +30,7 @@ int TOTAL_RECTS = 678; // numero magic
 int contrects = 0;
 boolean brects = true;
 
+/*
 // octicons
 PImage[] code;
 PImage[] branch;
@@ -45,11 +44,13 @@ float propcommit;
 float propmerge;
 float prophubot;
 float propzap;
+*/
 
 void setup() {
   size(1578,548); // 789.94 x 274.32 cm = 9' x 25'11"
   background(colors[0]);
   
+  /*
   // octicons load
   code = new PImage[5];
   branch = new PImage[5];
@@ -81,7 +82,6 @@ void setup() {
     merge[i] = loadImage(filename);
   }
   propmerge = float(merge[0].height)/float(merge[0].width);
-  /*
   for (int i=0; i<5; i++){
     String filename = "../octicons/hubot" + (i+1) + ".png";
     //println(filename);
@@ -125,6 +125,7 @@ void draw() {
     popMatrix();
   }
   
+  /*
   // octicon
   if(contrects % 5 == 0){ // menys frequents
     int dau = int(random(0,4));
@@ -154,6 +155,7 @@ void draw() {
     }
     popMatrix();
   }
+  */
   
   if(contrects % 10 == 0){
     //desplacaColorsEndavant();
