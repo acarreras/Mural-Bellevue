@@ -10,6 +10,11 @@ Generative system created with [Processing](www.processing.org) a language for t
 
 The algorithm is based on a pareto distribution to draw lines recursivelly, each line closer to the previous one, creating this organic vertical rectangles. Every time the code it's run the resulting image created is quite different from the previous one. Even though they maintain an aesthetic consistency chosen by design.
 
+Code under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license
+[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[legal](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
+
+
 ## Initial explorations of textures
 Playing with alpha color and texturized lines with dots
 ![un](/captures/mural2021_05_19_14_15_03.png)
